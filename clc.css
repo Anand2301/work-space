@@ -1,0 +1,59 @@
+.bd{
+    background-image: url(wallpaper/tower_neon_water_164636_3840x2160.jpg);
+    background-size: cover;
+    background-position: justify;
+    background-repeat: no-repeat;
+}
+.bc{
+    color: white;
+    box-sizing: border-box;
+    top: 25%;
+    left: 100%;
+}
+.con{
+    width: 800px;
+    height: 180px;
+    margin-left: 400px;
+    margin-top: 200px;
+    margin-bottom: 500px;
+    background-color: darkslategrey;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0.5;
+    display: flex;
+
+}
+.con::before{
+    left: 180px;
+    right: 180px;
+    background: red;
+    border-radius: 5px;
+    position: absolute;
+    left: -50px;
+    top: -50px;
+    z-index: -1;
+}
+.con span{
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.bc span::after{
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+#hours::after{
+    content: 'Hours';
+}
+#mins::after{
+    content: "Mins";
+}
+#sec::after{
+    content: "Sec";
+}
